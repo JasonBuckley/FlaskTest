@@ -3,4 +3,4 @@ build:
     web: Dockerfile
 
 run:
-  web: gunicorn app:app
+  web: gunicorn app/backend:app --bind 0.0.0.0:$PORT
